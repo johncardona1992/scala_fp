@@ -33,4 +33,14 @@ object Sequences extends App {
   // mutation
   numbers(2) = 0 // syntax sugar for numbers.update(2,0)
   println(numbers.mkString)
+
+  // Arrays and Seq
+  val numbersSeq: Seq[Int] = numbers
+  println(numbersSeq)
+
+  // vectors
+  val vector: Vector[Int] = Vector(1,2,3)
+  println(vector)
+
+  // Vectors are more efficient than Lists
 }
